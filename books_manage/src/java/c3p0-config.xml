@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<c3p0-config>
+    <named-config name="mariadb">
+        <property name="user">root</property>
+        <property name="password">hz</property>
+        <property name="driverClass">org.mariadb.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/book_manage</property>
+        
+        <property name="acquireIncrement">5</property>
+        <property name="initalPoolSize">10</property>
+        <property name="minPoolSize">10</property>
+        <property name="maxPoolSize">50</property>
+        
+        <property name="maxStatement">20</property>
+        <property name="maxStatementPerConnection">5</property>
+    </named-config>
+</c3p0-config>
